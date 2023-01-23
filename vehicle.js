@@ -9,16 +9,7 @@ class Vehicle {
         this.mileage = mileage;
         this.started = false;
         this.numberOfWheels = 0;
-    }
-
-    start() {
-        if (this.fuel > 0) {
-            return this.started = true;
-            console.log("engine started...!!!");
-        } else {
-            return this.started = false;
-            console.log("engine cannot start...");
-        }
+        this.fuel = 10;
     }
     accelerate() {
         if (this.started) {
@@ -56,10 +47,10 @@ class Vehicle {
     }
 
     drive() {
-        accelerate();
+        this.accelerate();
     }
     brake() {
-        decelerate();
+        this.decelerate();
     }
 
     autoPark()
@@ -76,7 +67,7 @@ class Vehicle {
         if (this.numberOfWheels == 8 && 8 == wheels) {
             console.log(this.model + " " + this.make + " is a Truck");
         } else if (this.numberOfWheels == 4 && 4 == wheels) {
-            console.log(this.model + " " + this.make + " is a CAr");
+            console.log(this.model + " " + this.make + " is a Car");
         } else if (this.numberOfWheels == 2 && 2 == wheels) {
             console.log(this.model + " " + this.make + " is a Bike");
         } else {
@@ -85,7 +76,6 @@ class Vehicle {
     }
 }
 
-//This exports things you want to use from this "module", more info in readme
-module.exports = {
-    Vehicle
-}
+/*export Vehicle class*/
+/*export default Vehicle;*/
+
