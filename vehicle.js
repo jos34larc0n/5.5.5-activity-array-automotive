@@ -53,16 +53,6 @@ class Vehicle {
         this.decelerate();
     }
 
-    autoPark()
-    {
-
-    }
-
-    autoDrive()
-    {
-      
-    }
-
     typeOfVehicle(wheels) {
         if (this.numberOfWheels == 8 && 8 == wheels) {
             console.log(this.model + " " + this.make + " is a Truck");
@@ -77,5 +67,5 @@ class Vehicle {
 }
 
 /*export Vehicle class*/
-/*export default Vehicle;*/
+export default Vehicle;
 

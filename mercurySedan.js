@@ -1,5 +1,5 @@
 /*import vehicle.js file*/
-/*import { Vehicle as VehicleModule } from './vehicle';*/
+import { Vehicle as VehicleModule } from './vehicle';
 /*extend class add properties required*/
 class Car extends VehicleModule {
     constructor(make, model, year, color, mileage) {
@@ -41,12 +41,12 @@ class Car extends VehicleModule {
         }
     }
 }
-
+/* add mercurySedan object*/
 let mercurySedan = new Car('mercury', 'rad_sedan', '2002', 'white', 50000)
-
+/*test methods*/
 mercurySedan.start()
 mercurySedan.loadPassenger(5)
 mercurySedan.stop()
 mercurySedan.Service()
-
-console.log(mercurySedan )
+/*console object*/
+console.log(mercurySedan)
